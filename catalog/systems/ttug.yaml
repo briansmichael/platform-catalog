@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: ttug
+  title: TTUG
+  description: 'Whispering Pines Trail and Taxiway Users Group: gate access, financial documents, minutes,
+    budget, history.'
+  links:
+  - url: /systems/ttug/
+    title: Docs, ideas & decisions
+spec:
+  owner: user:brian

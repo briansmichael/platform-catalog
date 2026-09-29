@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: object-storage
+  description: Blob storage for documents and reports (e.g. MinIO on k3s) - TBD
+spec:
+  type: object-storage
+  owner: user:brian
+  system: infrastructure

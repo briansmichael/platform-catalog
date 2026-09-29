@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Just an idea?
+    url: https://github.com/OWNER/platform-catalog/discussions/new/choose
+    about: Start in Discussions; promote to an issue when you commit to it.

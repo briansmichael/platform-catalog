@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: n5448p
+  title: N5448P
+  description: Purpose TBD.
+  links:
+  - url: /systems/n5448p/
+    title: Docs, ideas & decisions
+spec:
+  owner: user:brian

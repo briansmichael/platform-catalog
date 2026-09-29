@@ -1,0 +1,19 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: my-service                 # must match the file name
+  description: One line: what it does
+  tags: []
+  annotations:
+    brianmichael.org/language: tbd
+    brianmichael.org/runtime: tbd
+    brianmichael.org/repo: tbd
+    brianmichael.org/priority: tbd
+spec:
+  type: service                    # website | service | adapter | job | library
+  lifecycle: idea                  # idea | design | development | testing | deployed | deprecated | retired
+  owner: user:brian
+  system: platform
+  providesApis: []
+  consumesApis: []
+  dependsOn: []                    # e.g. resource:postgres, component:users-service

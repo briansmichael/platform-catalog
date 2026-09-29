@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: events-api
+  description: Events, schedules, RSVPs
+spec:
+  type: openapi
+  lifecycle: idea
+  owner: user:brian
+  system: platform
+  definition: |
+    # TBD: replace with the OpenAPI/AsyncAPI document or a $text reference

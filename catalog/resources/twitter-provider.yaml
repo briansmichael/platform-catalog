@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: twitter-provider
+  description: External twitter provider account - TBD
+spec:
+  type: third-party
+  owner: user:brian
+  system: infrastructure

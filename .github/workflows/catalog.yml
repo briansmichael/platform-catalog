@@ -1,0 +1,24 @@
+name: catalog
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -r requirements.txt
+      - name: Validate catalog and check generated files are current
+        run: python scripts/build_catalog.py --check
+      - name: Build docs (strict)
+        run: mkdocs build --strict
+      - name: Publish to GitHub Pages
+        if: github.ref == 'refs/heads/main'
+        run: mkdocs gh-deploy --force

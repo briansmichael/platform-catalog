@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: dns-areasontofly-com
+  title: areasontofly.com
+  description: DNS zone for areasontofly.com
+  annotations:
+    brianmichael.org/domain: areasontofly.com
+    brianmichael.org/registrar: tbd
+    brianmichael.org/dns-host: tbd
+    brianmichael.org/tls: tbd
+    brianmichael.org/redirects-to: none
+    brianmichael.org/serves: areasontofly-web
+    brianmichael.org/renewal: tbd
+spec:
+  type: dns-zone
+  owner: user:brian
+  system: areasontofly

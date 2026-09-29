@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: dns-reasontofly-com
+  title: reasontofly.com
+  description: DNS zone for reasontofly.com
+  annotations:
+    brianmichael.org/domain: reasontofly.com
+    brianmichael.org/registrar: tbd
+    brianmichael.org/dns-host: tbd
+    brianmichael.org/tls: tbd
+    brianmichael.org/redirects-to: areasontofly.com
+    brianmichael.org/serves: redirect only
+    brianmichael.org/renewal: tbd
+spec:
+  type: dns-zone
+  owner: user:brian
+  system: areasontofly

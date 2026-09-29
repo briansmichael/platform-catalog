@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: brian
+  description: Owner of everything in this catalog
+spec:
+  profile:
+    displayName: Brian
+  memberOf: []

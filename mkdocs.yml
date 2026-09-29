@@ -1,0 +1,52 @@
+site_name: Platform Catalog
+site_description: Brian's websites, webservices and infrastructure
+docs_dir: docs
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - content.code.copy
+  palette:
+    - scheme: slate
+      primary: indigo
+      toggle: {icon: material/weather-sunny, name: Light mode}
+    - scheme: default
+      primary: indigo
+      toggle: {icon: material/weather-night, name: Dark mode}
+extra_css:
+  - stylesheets/dense.css
+markdown_extensions:
+  - tables
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+nav:
+  - Home: index.md
+  - Dashboard:
+      - catalog/index.md
+      - Dependency graphs: catalog/graphs.md
+  - Systems:
+      - Platform: systems/platform/index.md
+      - TTUG: systems/ttug/index.md
+      - A Reason to Fly: systems/areasontofly/index.md
+      - N42BM: systems/n42bm/index.md
+      - brianmichael.org: systems/brianmichael/index.md
+      - N5448P: systems/n5448p/index.md
+      - Starfire Aviation: systems/starfireaviation/index.md
+      - Infrastructure: systems/infrastructure/index.md
+  - Conventions: conventions.md
+  - Templates:
+      - ADR: templates/adr.md
+      - Idea: templates/idea.md

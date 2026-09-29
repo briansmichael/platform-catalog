@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: dns-n5448p-com
+  title: n5448p.com
+  description: DNS zone for n5448p.com
+  annotations:
+    brianmichael.org/domain: n5448p.com
+    brianmichael.org/registrar: tbd
+    brianmichael.org/dns-host: tbd
+    brianmichael.org/tls: tbd
+    brianmichael.org/redirects-to: none
+    brianmichael.org/serves: n5448p-web
+    brianmichael.org/renewal: tbd
+spec:
+  type: dns-zone
+  owner: user:brian
+  system: n5448p

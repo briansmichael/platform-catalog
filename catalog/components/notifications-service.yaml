@@ -1,0 +1,28 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: notifications-service
+  description: Single entry point for outbound notifications; routes to channel adapters by user preference
+  annotations:
+    brianmichael.org/language: tbd
+    brianmichael.org/runtime: tbd
+    brianmichael.org/repo: tbd
+    brianmichael.org/priority: tbd
+spec:
+  type: service
+  lifecycle: idea
+  owner: user:brian
+  system: platform
+  providesApis:
+  - notifications-api
+  consumesApis:
+  - oidc
+  - users-api
+  dependsOn:
+  - resource:k3s-pi-cluster
+  - resource:postgres
+  - component:notify-email
+  - component:notify-sms
+  - component:notify-slack
+  - component:notify-twitter
+  - component:realtime-gateway

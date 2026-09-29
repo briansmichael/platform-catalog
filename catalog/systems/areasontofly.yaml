@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: areasontofly
+  title: A Reason to Fly
+  description: Game/social site that gives pilots a "reason" to get in the airplane and fly.
+  links:
+  - url: /systems/areasontofly/
+    title: Docs, ideas & decisions
+spec:
+  owner: user:brian

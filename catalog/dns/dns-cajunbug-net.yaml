@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: dns-cajunbug-net
+  title: cajunbug.net
+  description: DNS zone for cajunbug.net
+  annotations:
+    brianmichael.org/domain: cajunbug.net
+    brianmichael.org/registrar: tbd
+    brianmichael.org/dns-host: tbd
+    brianmichael.org/tls: tbd
+    brianmichael.org/redirects-to: none
+    brianmichael.org/serves: proton-mail (MX only)
+    brianmichael.org/renewal: tbd
+spec:
+  type: dns-zone
+  owner: user:brian
+  system: infrastructure
+  dependsOn:
+  - resource:proton-mail

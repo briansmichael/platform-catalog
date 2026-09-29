@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: messaging-api
+  description: User-to-user and group conversations
+spec:
+  type: openapi
+  lifecycle: idea
+  owner: user:brian
+  system: platform
+  definition: |
+    # TBD: replace with the OpenAPI/AsyncAPI document or a $text reference

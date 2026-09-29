@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: gate-controller
+  description: Physical Whispering Pines gate controller and its network interface
+  annotations:
+    brianmichael.org/interface: tbd
+    brianmichael.org/location: Whispering Pines gate
+spec:
+  type: iot-device
+  owner: user:brian
+  system: ttug

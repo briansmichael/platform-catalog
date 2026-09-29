@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: n5448p-web
+  description: N5448P site (purpose TBD)
+  annotations:
+    brianmichael.org/language: tbd
+    brianmichael.org/runtime: tbd
+    brianmichael.org/repo: tbd
+    brianmichael.org/priority: tbd
+spec:
+  type: website
+  lifecycle: idea
+  owner: user:brian
+  system: n5448p
+  dependsOn:
+  - resource:dns-n5448p-com

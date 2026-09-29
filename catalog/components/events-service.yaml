@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: events-service
+  description: Events and scheduling (fly-ins, TTUG meetings, challenges)
+  annotations:
+    brianmichael.org/language: tbd
+    brianmichael.org/runtime: tbd
+    brianmichael.org/repo: tbd
+    brianmichael.org/priority: tbd
+spec:
+  type: service
+  lifecycle: idea
+  owner: user:brian
+  system: platform
+  providesApis:
+  - events-api
+  consumesApis:
+  - oidc
+  - notifications-api
+  dependsOn:
+  - resource:k3s-pi-cluster
+  - resource:postgres

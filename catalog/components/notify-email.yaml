@@ -1,0 +1,20 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: notify-email
+  description: Email delivery (SMTP relay / transactional provider)
+  tags:
+  - channel-adapter
+  annotations:
+    brianmichael.org/language: tbd
+    brianmichael.org/runtime: tbd
+    brianmichael.org/repo: tbd
+    brianmichael.org/priority: tbd
+spec:
+  type: adapter
+  lifecycle: idea
+  owner: user:brian
+  system: platform
+  dependsOn:
+  - resource:k3s-pi-cluster
+  - resource:email-provider

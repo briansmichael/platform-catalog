@@ -1,0 +1,28 @@
+title: "[idea] "
+labels: [idea]
+body:
+  - type: dropdown
+    id: system
+    attributes:
+      label: System
+      options:
+        - platform
+        - ttug
+        - areasontofly
+        - n42bm
+        - brianmichael
+        - n5448p
+        - starfireaviation
+        - infrastructure
+    validations: {required: true}
+  - type: textarea
+    id: pitch
+    attributes:
+      label: The idea
+      description: Who benefits, and why? Half-baked is fine.
+    validations: {required: true}
+  - type: textarea
+    id: needs
+    attributes:
+      label: Services it might need
+      placeholder: events-api, notifications-api, weather-api…

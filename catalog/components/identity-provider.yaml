@@ -1,0 +1,22 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: identity-provider
+  description: 'OIDC identity provider for all sites (candidate: Authentik or Keycloak; see decision 0001)'
+  tags:
+  - security
+  annotations:
+    brianmichael.org/language: tbd
+    brianmichael.org/runtime: tbd
+    brianmichael.org/repo: tbd
+    brianmichael.org/priority: tbd
+spec:
+  type: service
+  lifecycle: design
+  owner: user:brian
+  system: platform
+  providesApis:
+  - oidc
+  dependsOn:
+  - resource:k3s-pi-cluster
+  - resource:postgres

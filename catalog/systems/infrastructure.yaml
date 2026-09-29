@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: infrastructure
+  title: Infrastructure
+  description: Hosting, data stores, DNS and third-party platforms the systems run on.
+  links:
+  - url: /systems/infrastructure/
+    title: Docs, ideas & decisions
+spec:
+  owner: user:brian

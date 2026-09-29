@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: proton-mail
+  description: Proton Mail hosting for cajunbug.net personal email
+spec:
+  type: email-hosting
+  owner: user:brian
+  system: infrastructure

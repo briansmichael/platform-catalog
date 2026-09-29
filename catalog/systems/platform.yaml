@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: platform
+  title: Platform
+  description: 'Shared services every site can use: identity, users, events, comments, messaging, notifications,
+    realtime, weather, reports.'
+  links:
+  - url: /systems/platform/
+    title: Docs, ideas & decisions
+spec:
+  owner: user:brian

@@ -1,0 +1,26 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ttug-web
+  description: ttug.net front end
+  annotations:
+    brianmichael.org/language: tbd
+    brianmichael.org/runtime: tbd
+    brianmichael.org/repo: tbd
+    brianmichael.org/priority: tbd
+spec:
+  type: website
+  lifecycle: idea
+  owner: user:brian
+  system: ttug
+  consumesApis:
+  - oidc
+  - gate-api
+  - documents-api
+  - budget-api
+  - minutes-api
+  - comments-api
+  - events-api
+  dependsOn:
+  - resource:k3s-pi-cluster
+  - resource:dns-ttug-net

@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: n42bm-web
+  description: RV-10 build/test/fly log
+  annotations:
+    brianmichael.org/language: tbd
+    brianmichael.org/runtime: github-pages
+    brianmichael.org/repo: tbd
+    brianmichael.org/priority: tbd
+spec:
+  type: website
+  lifecycle: deployed
+  owner: user:brian
+  system: n42bm
+  dependsOn:
+  - resource:github-pages
+  - resource:dns-n42bm-com

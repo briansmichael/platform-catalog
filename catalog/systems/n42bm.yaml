@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: n42bm
+  title: N42BM
+  description: Build, test and flight log for the experimental RV-10, N42BM.
+  links:
+  - url: /systems/n42bm/
+    title: Docs, ideas & decisions
+spec:
+  owner: user:brian

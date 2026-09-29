@@ -1,0 +1,39 @@
+name: New component
+description: Propose a new site, service or adapter for the catalog
+labels: [catalog, new-component]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Name (kebab-case)
+      placeholder: ttug-visitor-pass-service
+    validations: {required: true}
+  - type: dropdown
+    id: system
+    attributes:
+      label: System
+      options:
+        - platform
+        - ttug
+        - areasontofly
+        - n42bm
+        - brianmichael
+        - n5448p
+        - starfireaviation
+        - infrastructure
+    validations: {required: true}
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      options: [website, service, adapter, job, library]
+    validations: {required: true}
+  - type: textarea
+    id: desc
+    attributes:
+      label: What it does
+    validations: {required: true}
+  - type: textarea
+    id: deps
+    attributes:
+      label: APIs it provides / consumes, resources it needs

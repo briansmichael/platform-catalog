@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: comments-service
+  description: Generic threaded comments keyed by (site, entity type, entity id)
+  annotations:
+    brianmichael.org/language: tbd
+    brianmichael.org/runtime: tbd
+    brianmichael.org/repo: tbd
+    brianmichael.org/priority: tbd
+spec:
+  type: service
+  lifecycle: idea
+  owner: user:brian
+  system: platform
+  providesApis:
+  - comments-api
+  consumesApis:
+  - oidc
+  - notifications-api
+  dependsOn:
+  - resource:k3s-pi-cluster
+  - resource:postgres

@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: starfireaviation
+  title: Starfire Aviation
+  description: Site for Starfire Aviation LLC. Scope TBD.
+  links:
+  - url: /systems/starfireaviation/
+    title: Docs, ideas & decisions
+spec:
+  owner: user:brian

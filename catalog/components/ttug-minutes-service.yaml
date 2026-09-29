@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ttug-minutes-service
+  description: Meetings, agendas, minutes; discussion via comments-service
+  annotations:
+    brianmichael.org/language: tbd
+    brianmichael.org/runtime: tbd
+    brianmichael.org/repo: tbd
+    brianmichael.org/priority: tbd
+spec:
+  type: service
+  lifecycle: idea
+  owner: user:brian
+  system: ttug
+  providesApis:
+  - minutes-api
+  consumesApis:
+  - oidc
+  - comments-api
+  - events-api
+  dependsOn:
+  - resource:k3s-pi-cluster
+  - resource:postgres

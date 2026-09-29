@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: k3s-pi-cluster
+  description: 16-node Raspberry Pi cluster running k3s
+  annotations:
+    brianmichael.org/location: home lab
+spec:
+  type: kubernetes-cluster
+  owner: user:brian
+  system: infrastructure

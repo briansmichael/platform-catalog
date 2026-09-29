@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: aviationweather-gov
+  description: NOAA Aviation Weather Center data API
+spec:
+  type: third-party
+  owner: user:brian
+  system: infrastructure

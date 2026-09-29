@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: brianmichael
+  title: brianmichael.org
+  description: Personal website hosting things relevant to Brian.
+  links:
+  - url: /systems/brianmichael/
+    title: Docs, ideas & decisions
+spec:
+  owner: user:brian

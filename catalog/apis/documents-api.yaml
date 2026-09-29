@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: documents-api
+  description: Upload, index and view TTUG financial and historical documents
+spec:
+  type: openapi
+  lifecycle: idea
+  owner: user:brian
+  system: ttug
+  definition: |
+    # TBD: replace with the OpenAPI/AsyncAPI document or a $text reference

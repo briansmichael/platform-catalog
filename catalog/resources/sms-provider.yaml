@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: sms-provider
+  description: External sms provider account - TBD
+spec:
+  type: third-party
+  owner: user:brian
+  system: infrastructure

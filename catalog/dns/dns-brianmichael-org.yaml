@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: dns-brianmichael-org
+  title: brianmichael.org
+  description: DNS zone for brianmichael.org
+  annotations:
+    brianmichael.org/domain: brianmichael.org
+    brianmichael.org/registrar: tbd
+    brianmichael.org/dns-host: tbd
+    brianmichael.org/tls: tbd
+    brianmichael.org/redirects-to: none
+    brianmichael.org/serves: brianmichael-web
+    brianmichael.org/renewal: tbd
+spec:
+  type: dns-zone
+  owner: user:brian
+  system: brianmichael

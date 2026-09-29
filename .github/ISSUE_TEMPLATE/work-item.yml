@@ -1,0 +1,40 @@
+name: Work item
+description: Committed work on a component (promoted from an idea or discussion)
+labels: [work]
+body:
+  - type: dropdown
+    id: system
+    attributes:
+      label: System
+      options:
+        - platform
+        - ttug
+        - areasontofly
+        - n42bm
+        - brianmichael
+        - n5448p
+        - starfireaviation
+        - infrastructure
+    validations: {required: true}
+  - type: input
+    id: component
+    attributes:
+      label: Component
+      description: metadata.name from catalog/components/ (or "new")
+      placeholder: ttug-gate-service
+    validations: {required: true}
+  - type: textarea
+    id: what
+    attributes:
+      label: What and why
+    validations: {required: true}
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      value: |
+        - [ ]
+  - type: input
+    id: origin
+    attributes:
+      label: Originating idea / discussion
