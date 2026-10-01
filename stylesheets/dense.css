@@ -1,0 +1,8 @@
+/* Data-dense tables: full width, tight rows, sticky header, small type */
+.md-grid { max-width: 100%; }
+.md-typeset table:not([class]) { font-size: .66rem; display: table; width: 100%; }
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td { padding: .25em .5em; vertical-align: top; }
+.md-typeset table:not([class]) th { position: sticky; top: 0; z-index: 1; }
+.md-typeset table:not([class]) tbody tr:hover { background: var(--md-accent-fg-color--transparent); }
+.md-typeset .tbd { opacity: .45; font-style: italic; }
