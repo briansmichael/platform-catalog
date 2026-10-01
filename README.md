@@ -35,10 +35,10 @@ make serve       # http://127.0.0.1:8000
 |-----------------------------------|---------|
 | Change a status                   | Edit `spec.lifecycle` in the component/API YAML, `make catalog`, commit |
 | Add a service                     | Copy `docs/templates/component.yaml` into `catalog/components/<name>.yaml`, fill it in, `make catalog` |
-| Capture a quick idea              | Open a GitHub Discussion in the system's category (see `.github/DISCUSSION_TEMPLATE/`) |
-| Flesh out an idea                 | Copy `docs/templates/idea.md` → `docs/systems/<system>/ideas/` |
-| Commit to building it             | Convert the Discussion to an Issue; it lands on the GitHub Project board |
-| Record a design choice            | Copy `docs/templates/adr.md` → `docs/systems/<system>/decisions/NNNN-title.md` |
+| Capture a quick idea   | Create an `Idea` work package in the system's OpenProject project                                     |
+| Flesh out an idea      | Copy `docs/templates/idea.md` → `docs/systems/<system>/ideas/` and link it from the Idea work package  |
+| Commit to building it  | Change the Idea's type to `Feature` (or `Bug`); it appears in the Open work views                      |
+| Track bugs and work    | OpenProject: see [`docs/tracking/openproject.md`](docs/tracking/openproject.md)                        |
 | See everything at once            | `docs/catalog/index.md` (dashboard) and `graphs.md` (dependency graphs) |
 
 See [`docs/conventions.md`](docs/conventions.md) for the lifecycle definitions, naming
