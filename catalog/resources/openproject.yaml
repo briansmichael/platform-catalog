@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: openproject
+  description: Open-source project management (bug tracking, feature requests, roadmaps) — hosted at openproject.org
+  links:
+  - url: https://www.openproject.org
+    title: openproject.org
+spec:
+  type: project-management
+  owner: user:brian
+  system: infrastructure

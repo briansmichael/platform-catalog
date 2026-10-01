@@ -59,6 +59,7 @@ spec:
   - ./catalog/resources/github-pages.yaml
   - ./catalog/resources/k3s-pi-cluster.yaml
   - ./catalog/resources/object-storage.yaml
+  - ./catalog/resources/openproject.yaml
   - ./catalog/resources/postgres.yaml
   - ./catalog/resources/proton-mail.yaml
   - ./catalog/resources/slack-provider.yaml

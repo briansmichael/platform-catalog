@@ -2,7 +2,7 @@
 
 # Catalog dashboard
 
-24 components · 14 APIs · 11 resources · 9 DNS zones · 95 open `tbd` fields on components
+24 components · 14 APIs · 12 resources · 9 DNS zones · 95 open `tbd` fields on components
 
 **💡 idea** 21 · **📐 design** 2 · **✅ deployed** 1
 
@@ -65,6 +65,7 @@
 | infrastructure | `github-pages` | static-hosting | GitHub Pages hosting |
 | infrastructure | `k3s-pi-cluster` | kubernetes-cluster | 16-node Raspberry Pi cluster running k3s |
 | infrastructure | `object-storage` | object-storage | Blob storage for documents and reports (e.g. MinIO on k3s) - TBD |
+| infrastructure | `openproject` | project-management | Open-source project management (bug tracking, feature requests, roadmaps) — hosted at openproject.org |
 | infrastructure | `postgres` | database | Relational store (one instance, schema per service) - TBD |
 | infrastructure | `proton-mail` | email-hosting | Proton Mail hosting for cajunbug.net personal email |
 | infrastructure | `slack-provider` | third-party | External slack provider account - TBD |
